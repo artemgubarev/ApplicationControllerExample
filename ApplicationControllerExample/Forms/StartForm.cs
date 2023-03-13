@@ -1,5 +1,6 @@
 ﻿using ApplicationControllerExample.View;
 using System;
+using System.Runtime.Remoting.Messaging;
 using System.Windows.Forms;
 
 namespace ApplicationControllerExample.Forms
@@ -30,5 +31,9 @@ namespace ApplicationControllerExample.Forms
         {
             if (action != null) action();
         }
+
+        public string SomeClassArg { get { return txtboxSomeArgument.Text; } }
+
+        
     }
 }

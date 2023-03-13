@@ -25,5 +25,10 @@ namespace ApplicationControllerExample.Forms
             if (action != null) action();
         }
 
+        public string SomeClassArg { 
+            get { return txtBoxSameArgument.Text; } 
+            set { txtBoxSameArgument.Text = value; }
+        }
+
     }
 }

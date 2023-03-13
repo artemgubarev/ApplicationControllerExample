@@ -1,4 +1,5 @@
-﻿using ApplicationControllerExample.View;
+﻿using ApplicationControllerExample.Model;
+using ApplicationControllerExample.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,6 +25,7 @@ namespace ApplicationControllerExample.Forms
             this.StartPosition = FormStartPosition.CenterScreen;
 
             btnRunChildForm.Click += (sender, args) => Invoke(RunChildForm);
+
         }
 
         public new void Show()
@@ -38,5 +40,12 @@ namespace ApplicationControllerExample.Forms
         {
             if (action != null) action();
         }
+
+        public string SomeClassArg { 
+            get { return txtboxSomeArgumentValue.Text; }
+            set { txtboxSomeArgumentValue.Text = value;}
+        }
+
+        
     }
 }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ApplicationControllerExample.Common
+﻿namespace ApplicationControllerExample.Common
 {
     public abstract class BasePresenter<TView> : IPresenter
         where TView : IView
@@ -23,8 +17,6 @@ namespace ApplicationControllerExample.Common
             View.Show();
         }
     }
-
-
 
     public abstract class BasePresenter<TView, TArg> : IPresenter<TArg>
         where TView : IView

@@ -10,5 +10,6 @@ namespace ApplicationControllerExample.View
     public interface IStartFormView : IView
     {
         event Action RunMainForm;
+        string SomeClassArg { get; }
     }
 }

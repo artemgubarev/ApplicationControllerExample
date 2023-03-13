@@ -15,6 +15,7 @@ namespace ApplicationControllerExample.Presenter
         private void RunMainForm()
         {
             var someclass = new SomeClass();
+            someclass.SomeField = View.SomeClassArg;
             Controller.Run<MainFormPresenter, SomeClass>(someclass);
             View.Close();   
         }

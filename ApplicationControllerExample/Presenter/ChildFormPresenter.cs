@@ -1,11 +1,6 @@
 ﻿using ApplicationControllerExample.Common;
 using ApplicationControllerExample.Model;
 using ApplicationControllerExample.View;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ApplicationControllerExample.Presenter
 {
@@ -21,6 +16,7 @@ namespace ApplicationControllerExample.Presenter
         public override void Run(SomeClass argument)
         {
             _someClass = argument;
+            View.SomeClassArg = _someClass.SomeField;
             View.Show();
         }
     }

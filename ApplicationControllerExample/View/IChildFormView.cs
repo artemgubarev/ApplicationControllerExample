@@ -9,5 +9,6 @@ namespace ApplicationControllerExample.View
 {
     public interface IChildFormView : IView
     {
+        string SomeClassArg { get; set; }
     }
 }
