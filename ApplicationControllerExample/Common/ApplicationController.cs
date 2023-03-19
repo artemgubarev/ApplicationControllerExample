@@ -58,5 +58,16 @@ namespace ApplicationControllerExample.Common
             var presenter = _container.Resolve<TPresenter>();
             presenter.Run(argument);
         }
+
+        public void RunWithRef<TPresenter, TArgumnent>(ref TArgumnent argument) where TPresenter : IPresenter<TArgumnent>
+        {
+            if (!_container.IsRegistered<TPresenter>())
+            {
+                _container.Register<TPresenter>();
+            }
+
+            var presenter = _container.Resolve<TPresenter>();
+            presenter.RunWithRef(ref argument);
+        }
     }
 }

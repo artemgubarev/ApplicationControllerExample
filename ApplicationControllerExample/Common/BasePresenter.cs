@@ -31,6 +31,8 @@
             }
 
             public abstract void Run(TArg argument);
+
+            public abstract void RunWithRef(ref TArg argument);
         }
 
 }

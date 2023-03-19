@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\artem\\source\\repos\\ApplicationControllerExample\\ApplicationControllerExample\\ApplicationControllerExample.csproj": {}
+    "C:\\Users\\artem\\Source\\Repos\\ApplicationControllerExample\\ApplicationControllerExample\\ApplicationControllerExample.csproj": {}
   },
   "projects": {
-    "C:\\Users\\artem\\source\\repos\\ApplicationControllerExample\\ApplicationControllerExample\\ApplicationControllerExample.csproj": {
+    "C:\\Users\\artem\\Source\\Repos\\ApplicationControllerExample\\ApplicationControllerExample\\ApplicationControllerExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\artem\\source\\repos\\ApplicationControllerExample\\ApplicationControllerExample\\ApplicationControllerExample.csproj",
+        "projectUniqueName": "C:\\Users\\artem\\Source\\Repos\\ApplicationControllerExample\\ApplicationControllerExample\\ApplicationControllerExample.csproj",
         "projectName": "ApplicationControllerExample",
-        "projectPath": "C:\\Users\\artem\\source\\repos\\ApplicationControllerExample\\ApplicationControllerExample\\ApplicationControllerExample.csproj",
+        "projectPath": "C:\\Users\\artem\\Source\\Repos\\ApplicationControllerExample\\ApplicationControllerExample\\ApplicationControllerExample.csproj",
         "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\artem\\source\\repos\\ApplicationControllerExample\\ApplicationControllerExample\\obj\\",
+        "outputPath": "C:\\Users\\artem\\Source\\Repos\\ApplicationControllerExample\\ApplicationControllerExample\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

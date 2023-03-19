@@ -1,6 +1,7 @@
 ﻿using ApplicationControllerExample.Common;
 using ApplicationControllerExample.Model;
 using ApplicationControllerExample.View;
+using System.Diagnostics;
 
 namespace ApplicationControllerExample.Presenter
 {
@@ -16,7 +17,7 @@ namespace ApplicationControllerExample.Presenter
 
         private void RunChildForm()
         {
-            Controller.Run<ChildFormPresenter, SomeClass>(_someClass);
+            Controller.RunWithRef<ChildFormPresenter, SomeClass>(ref _someClass); 
         }
 
         public override void Run(SomeClass argument)
@@ -24,6 +25,19 @@ namespace ApplicationControllerExample.Presenter
             _someClass = argument;
             View.SomeClassArg = _someClass.SomeField;
             View.Show();
+
+            _someClass.PropertyChanged += (sender, e) =>
+            {
+                if (e.PropertyName == nameof(_someClass.SomeField))
+                {
+                    View.SomeClassArg = _someClass.SomeField;
+                }
+            };
+        }
+
+        public override void RunWithRef(ref SomeClass argument)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

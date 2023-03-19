@@ -10,5 +10,7 @@ namespace ApplicationControllerExample.View
     public interface IChildFormView : IView
     {
         string SomeClassArg { get; set; }
+
+        event Action<string> SameArgTextChange;
     }
 }

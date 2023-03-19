@@ -11,8 +11,10 @@ namespace ApplicationControllerExample.Common
         void Run();
     }
 
-    public interface IPresenter<in TArg>
+   // public interface IPresenter<in TArg>
+    public interface IPresenter<TArg>
     {
         void Run(TArg argument);
+        void RunWithRef(ref TArg argument);
     }
 }

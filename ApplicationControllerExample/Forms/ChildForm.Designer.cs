@@ -46,6 +46,7 @@
             this.Controls.Add(this.txtBoxSameArgument);
             this.Name = "ChildForm";
             this.Text = "ChildForm";
+            this.Load += new System.EventHandler(this.ChildForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

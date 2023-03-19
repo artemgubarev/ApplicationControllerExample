@@ -22,5 +22,8 @@ namespace ApplicationControllerExample.Common
 
         void Run<TPresenter, TArgumnent>(TArgumnent argumnent)
             where TPresenter : class, IPresenter<TArgumnent>;
+
+        void RunWithRef<TPresenter, TArgumnent> (ref TArgumnent argumnent)
+            where TPresenter : IPresenter<TArgumnent>;
     }
 }
